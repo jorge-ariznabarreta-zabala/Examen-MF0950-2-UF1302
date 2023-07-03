@@ -1,49 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hidrog@lectricidad</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Hidrógeno <-> Electricidad</h1>
-        <nav>
-            <ul>
-                <li><a href="#info">Info </a></li>
-                <li><a href="#energy"> Gestiona tu energía </a></li>
-                <li><a href="#fuelcell"> Pilas de hidrógeno </a></li>
-                <li><a href="#contact"> Contacto </a></li>
-            </ul>
-        </nav>
-    </header>
-    <body id="home">
-        <div id="info">
-            <h2>Qué es el hidrógeno verde</h2>
-            <p>El hidrógeno renovable, también llamado hidrógeno verde, es un vector energético que proviene de fuentes renovables y con cero emisiones de CO2. El uso de hidrógeno renovable, junto con los combustibles líquidos de baja huella de carbono, son esenciales para la descarbonización. </p>
+	<head>
+		<meta charset="UTF-8" />
+        <meta name="description" content="Energía renovable e Hidrógeno">
+        <meta name="keywords" content="Hidrógeno, hidrogen, pila de combustible, fuelcell">
+        <meta name="author" content="Avanzira">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hidrog@lectricidad</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="assets\h2.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	</head>
+	<body id="home">
+		<header >
+			<h1>Hidrógeno <-> Electricidad</h1>
+			<nav class="darker-back">
+				<ul>
+					<li><a href="#info">Info </a></li>
+					<li><a href="#energy"> Gestiona tu energía </a></li>
+					<li><a href="#fuelcell"> Pilas de hidrógeno </a></li>
+					<li><a href="#contact"> Contacto </a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div id="info">
+				<h2>Info: Qué es el hidrógeno verde</h2>
+				<p>
+					El hidrógeno renovable, también llamado hidrógeno verde, es un vector
+					energético que proviene de fuentes renovables y con cero emisiones de
+					CO2. El uso de hidrógeno renovable, junto con los combustibles
+					líquidos de baja huella de carbono, son esenciales para la
+					descarbonización.
+				</p>
+				<div class="img-container">
+					<img src="assets\Hidrogeno_Verde_746x419.jpg" alt="H2 Verde" />
+				</div>
+			</div>
+			<div id="energy">
+				<h2>Gestiona tu energía</h2>
+				<p>
+					Instalamos una pila de combustible (H2) en tu casa. Si tienes electricidad y no la necesitas, la almacena como hidrógeno.
+                    Si tienes hidrógeno almacenado, recupera la energía y la entrega como electricidad y agua caliente.
+				</p>
+				<div class="img-container">
+					<img src="assets\PEM_fuel_cell_diagram.jpg" alt="Fuel-cell" />
+				</div>
+			</div>
+			<div id="fuelcell">
+				<h2>Pilas de hidrógeno</h2>
+				<p>
+					Este elemento es la central energética de tu hogar. Almacena como
+					hidrógeno la energía que genera la instalación renovable. Para
+					recuperar esa energía en el momento que hay consumo. La conversión de
+					hidrógeno a electricidad es reversible.</p>
+                    <p>Puedes gestionar la instalación desde nuestra APP. Encender la calefacción, vender electricidad o hidrógeno,...
+				</p>
+				<div class="img-container">
+					<img src="assets\Fuel_cell_PEMFC.svg" alt="Fuelcell_PEMFC" />
+				</div>
+			</div>
+			<form id="contact" action="/submit_form.html" method="get" target="_blank">
+				<h2>Contáctanos</h2>
+                <p>Si tienes energía disponible y quieres almacenarla par su uso, <span class="animado">contáctanos</span>.</p>
+				<fieldset>
+					<legend>Introduce tus datos</legend>
+					<input type="text" id="firstNumber" placeholder="Nombre" name="userName" required />
+					<input type="text" id="lastNumber" placeholder="Apellidos" name="surname"required />
+                    <p>
+						<p>Horario de contacto:</p>
+						<label
+							><input
+								type="radio"
+								name="horario"
+								value="0"
+								checked />
+							9:00-10:00</label
+						>
+						<label
+							><input type="radio" name="horario" value="1" />
+							10:00-11:00</label
+						>
+						<label
+							><input type="radio" name="horario" value="2" />
+							11:00-12:00</label
+						>
+						<label
+							><input type="radio" name="horario" value="3" />
+							12:00-13:00</label
+						>
+						<label
+							><input type="radio" name="horario" value="4" />
+							13:00-14:00</label
+						>
+						<label
+							><input type="radio" name="horario" value="5" />
+							14:00-15:00</label
+						>
+						<label
+							><input type="radio" name="horario" value="7" />
+							15:00-16:00</label
+						>
+						<label
+							><input type="radio" name="horario" value="8" />
+							16:00-17:00</label
+						>
+						<label
+							><input type="radio" name="horario" value="9" />
+							17:00-18:00</label
+						>
+					</p>
+					<fieldset>
+						<legend>Energías disponibles</legend>
+						<select name="seleccion">
+                            <option value="Fotovoltaica">Fotovoltáica</option>
+                            <option value="Eolica">Eólica</option>
+                            <option value="Hidraulica">Hidráulica</option>
+                            <option value="Otras" selected>Otras</option>                            
+                            </select>
+					</fieldset>
 
-        </div>
-        <div id="energy">
-            <h2>Cómo funciona nuestro sistema</h2>
-          <p>Mediante el intercambio de electricidad e hidrógeno, puedes almacenar la energía que genera tu instalación de energía renovable.</p>
-        </div>
-        <div id="fuelcell">
-            <h2>La pila de hidrógeno</h2>
-            <p>Este elemento es la central energética de tu hogar. Almacena como hidrógeno la energía que genera la instalación renovable. Para recuperar esa energía en el momento que hay consumo</p>
+					
 
-        </div>
-        <form id="contact" action="submit" method="get">
-<h2>Contáctanos</h2>
-        </form>
-        <a href="#home" class="btn-flotante">Home</a>
-    </body>
-    <footer>  
-        <div class="grid3 copyright">
-            <p>&#0169 Untitled. All rights reserved.</p>
-            <p class="border-side">Design: <u>HTML5 UP</u></p>
-            <p>Demo Images: <u>Dreametry Doodle</u></p>
-        </div>
-    </footer>
-</body>
+					<legend>Introduce tu mensaje</legend>
+					<textarea
+						id="cajatexto"
+						name="textarea"
+						rows="5"
+						cols="50"
+						form="contact"
+						placeholder="Resizing in CSS resize: none|both|horizontal|vertical|initial|inherit;"></textarea>
+					<p><input type="checkbox" id="privacity" name="privacity">
+                        <label for="vehicle1"> He leído y acepto la política de privacidad</label><br>
+                        <input type="submit"/>
+                        <input type="reset" /></p>
+				</fieldset>
+			</form>
+			<a href="#home" class="btn-flotante clear-back">Home</a>
+		</main>
+		<footer>
+			<div class="grid3 copyright darker-back">
+				<p>@ Untitled. All rights reserved.</p>
+				<p class="border-side">Design: <u>HTML5 UP</u></p>
+				<p>Demo Images: <u>Dreametry Doodle</u></p>
+			</div>
+		</footer>
+	</body>
 </html>
