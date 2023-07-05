@@ -39,3 +39,13 @@ Login de Acceso =>{
     functional.js linea 21 //Cambio de imagenes
     index.html linea 39 id="paraCambiar"
 }
+
+4 funciones en functional.js
+linea l2: function fecha()
+linea 19: function buttonEnabler()
+linea 31: function funcion_mouseover()
+linea 34: function funcion_mouseleave()
+
+2 funciones en login.js
+Linea 7: function log_in()
+linea 17: function checkPassword(valor)

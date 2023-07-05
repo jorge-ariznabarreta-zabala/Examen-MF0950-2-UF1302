@@ -17,23 +17,19 @@
 			<nav class="darker-back">
 				<ul>
 					<li><a href="index.html"> Home </a></li>
-					<li><a href="#info">Info </a></li>
-					<li><a href="#energy"> Gestiona tu energía </a></li>
-					<li><a href="#fuelcell"> Pilas de hidrógeno </a></li>
-					<li><a href="#contact"> Contacto </a></li>
 				</ul>
 			</nav>
 		</header>
 		<main>			
-			<form id="contact" action="/404.html" method="get" target="_blank">
+			<form id="login" >
 				<h2>Entra en nuestra intranet</h2>
                 <p>Si no tienes cuenta, <a href="404.html" class="animado_signin">Crea tu cuenta</a>.</p>
 				<fieldset>
 					<legend>Introduce tus datos</legend>
-					<input type="text" id="username" placeholder="Usuario" name="userName" required />
-					<input type="password" id="pass" placeholder="Contraseña" name="pass"required />    
-                    <input type="submit"/>
-                    <input type="reset" /></p>
+					<input type="email" id="username" placeholder="Email" name="userName" required />
+					<input type="password" id="pass" placeholder="Contraseña" name="pass" required />    
+                    <input type="submit" id="loginboton" class="clear-back"/>
+                    <input type="reset" class="clear-back"/></p>
 				</fieldset>
 			</form>
 			<a href="#home" class="btn-flotante clear-back">Arriba</a>
@@ -45,5 +41,6 @@
 				<p>Demo Images: <u>Dreametry Doodle</u></p>
 			</div>
 		</footer>
+		<script type="module" src="login.js"></script>
 	</body>
 </html>
