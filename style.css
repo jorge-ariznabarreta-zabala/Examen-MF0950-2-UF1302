@@ -158,8 +158,22 @@ h2{
       }
       @keyframes example {
         0%   {left:0px;}
-      
+      	
         50%  {color: red; left:200px}
-       
+		    
+        100% {left:0px}
+      }
+	  .animado_signin
+	  {    font-family: "Sofia", sans-serif;
+		  position: relative;
+		  animation-name: signin;
+		  animation-duration: 4s;
+		  animation-iteration-count: infinite
+		}
+	  @keyframes signin {
+        0%   {left:0px;}
+        25% {color: rgb(255, 0, 212), left 100}
+        50%  {color: red; left:200px}
+		75% {color: rgb(255, 0, 255), left 100}       
         100% {left:0px}
       }
