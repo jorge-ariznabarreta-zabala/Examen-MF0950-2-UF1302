@@ -27,6 +27,7 @@ Screenshot de la página y dirección del github donde se aloja
 ## JS 05/05/2023
 Login de Acceso =>{
     página login.html
+    scripts en login.js
 }
 (Escribir la fecha en #date) => {
     index.html linea 24 <li id="date"></li>
