@@ -49,3 +49,5 @@ linea 34: function funcion_mouseleave()
 2 funciones en login.js
 Linea 7: function log_in()
 linea 17: function checkPassword(valor)
+
+Screenshot de código: login.js.png
