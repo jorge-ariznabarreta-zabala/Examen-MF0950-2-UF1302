@@ -1,4 +1,4 @@
-#HIDROG@lectricidad
+# HIDROG@lectricidad
 Autor: Jorge Ariznabarreta
 Contacto: avanzira@gmail.com
 
@@ -23,3 +23,19 @@ Casilla de verificación
 
 ## OTROS REQUISITOS
 Screenshot de la página y dirección del github donde se aloja
+
+## JS 05/05/2023
+Login de Acceso =>{
+    página login.html
+}
+(Escribir la fecha en #date) => {
+    index.html linea 24 <li id="date"></li>
+    functional.js linea 1 //Escribir la fecha en #date
+}
+(Checkbox para activar Submit)=>{
+    
+}
+(Cambio de imágenes)=>{
+    functional.js linea 21 //Cambio de imagenes
+    index.html linea 39 id="paraCambiar"
+}
