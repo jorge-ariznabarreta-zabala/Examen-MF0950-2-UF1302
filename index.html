@@ -21,6 +21,7 @@
 					<li><a href="#fuelcell"> Pilas de hidrógeno </a></li>
 					<li><a href="#contact"> Contacto </a></li>
 					<li><a href="login.html"> Login </a></li>
+					<li id="date"></li>
 				</ul>
 			</nav>
 		</header>
@@ -132,8 +133,8 @@
 						form="contact"
 						placeholder="Resizing in CSS resize: none|both|horizontal|vertical|initial|inherit;"></textarea>
 					<p><input type="checkbox" id="privacity" name="privacity">
-                        <label for="vehicle1"> He leído y acepto la política de privacidad</label><br>
-                        <input type="submit"/>
+                        <label for="privacity"> He leído y acepto la política de privacidad</label><br>
+                        <input id="submitButton" type="submit"disabled/>
                         <input type="reset" /></p>
 				</fieldset>
 			</form>
@@ -147,4 +148,5 @@
 			</div>
 		</footer>
 	</body>
+	<script type="module" src="functional.js"></script>
 </html>
